@@ -24,6 +24,11 @@
   outline: none;
 }
 
+.NewSkillForm select {
+  width: 64%;
+  margin-top: 1rem
+}
+
 .NewSkillForm .inputField {
   margin-bottom: 10px;
 }

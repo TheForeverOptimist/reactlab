@@ -1,19 +1,6 @@
 import React from 'react'
 import SkillListItem from './SkillListItem'
 
-  
-
-//   function SkillList() {
-//     return (
-//       <div className="SkillList">
-//         <ul>
-//           <SkillListItem />
-//           <SkillListItem />
-//           <SkillListItem />
-//         </ul>
-//       </div>
-//     );
-//   } 
   function SkillList(props) {
 
     return (

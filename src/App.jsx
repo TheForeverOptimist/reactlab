@@ -13,10 +13,8 @@ function App() {
     { name: "Python", level: 2 },
   ]);
 
-  function handleAddSkill(skill) {
-    const newArray = [...skills, skill]
-    setSkills(newArray);
-    console.log(skills)
+  function handleAddSkill(newSkill) {
+    setSkills((skills) => [...skills, newSkill])
   }
 
   const [showSkills, setShowSkills] = useState(true);
@@ -27,7 +25,7 @@ function App() {
       <h1>React Dev Skills </h1>
       <SkillList skills={skills} />
       <hr />
-      <NewSkillForm />
+      <NewSkillForm handleAddSkill={handleAddSkill} />
     </div>
   );
 }
